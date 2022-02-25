@@ -82,7 +82,31 @@ https://arxiv.org/abs/1509.04874
 
 ---
 
-### 5.
+### 5. SQUEEZENET: ALEXNET-LEVEL ACCURACY WITH 50X FEWER PARAMETERS AND <0.5MB MODEL SIZE
+
+#### Abstract
+
+Recent research on deep convolutional neural networks (CNNs) has focused pri- marily on improving accuracy. For a given accuracy level, it is typically possi- ble to identify multiple CNN architectures that achieve that accuracy level. With equivalent accuracy, smaller CNN architectures offer at least three advantages: (1) Smaller CNNs require less communication across servers during distributed train- ing. (2) Smaller CNNs require less bandwidth to export a new model from the cloud to an autonomous car. (3) Smaller CNNs are more feasible to deploy on FP- GAs and other hardware with limited memory. To provide all of these advantages, we propose a small CNN architecture called SqueezeNet. SqueezeNet achieves AlexNet-level accuracy on ImageNet with 50x fewer parameters. Additionally, with model compression techniques, we are able to compress SqueezeNet to less than 0.5MB (510× smaller than AlexNet).
+The SqueezeNet architecture is available for download here: https://github.com/DeepScale/SqueezeNet
+
+> **요약** :
+CNN 에서 작은 모델은 3가지 이점을 제공한다
+첫째 : 분산 학습중 서버간 통신이 적음
+둘째 : 자율 자동차로 모델을 내보내는데 대역폭이 덜 필요하다.
+셋째 : FP-GA 등 다른 하드웨어에 배포가 용이하다.
+이러한 작은 모델을 위해 squeezenet 을 제안한다. 이 모델은 ImageNet 에 비해 50배 적은 매개변수로 AlexNet 수준의 정확도를 보인다.
+
+#### tagging
+
+`CNN`, `SqueezeNet`, `AlexNet`, `ImageNet`, `ICLR`
+
+#### paper link
+
+https://arxiv.org/pdf/1602.07360.pdf
+
+---
+
+### 6.
 
 #### Abstract
 
@@ -92,7 +116,7 @@ https://arxiv.org/abs/1509.04874
 
 ---
 
-### 5.
+### 7.
 
 #### Abstract
 
@@ -102,7 +126,7 @@ https://arxiv.org/abs/1509.04874
 
 ---
 
-### 5.
+### 8.
 
 #### Abstract
 
@@ -112,7 +136,57 @@ https://arxiv.org/abs/1509.04874
 
 ---
 
-### 5.
+### 9.
+
+#### Abstract
+
+#### tagging
+
+#### paper link
+
+---
+
+### 10.
+
+#### Abstract
+
+#### tagging
+
+#### paper link
+
+---
+
+### 11.
+
+#### Abstract
+
+#### tagging
+
+#### paper link
+
+---
+
+### 12.
+
+#### Abstract
+
+#### tagging
+
+#### paper link
+
+---
+
+### 13.
+
+#### Abstract
+
+#### tagging
+
+#### paper link
+
+---
+
+### 14.
 
 #### Abstract
 
