@@ -113,10 +113,12 @@ https://arxiv.org/pdf/1602.07360.pdf
 We introduce a design strategy for neural network macro-architecture based on self- similarity. Repeated application of a simple expansion rule generates deep networks whose structural layouts are precisely truncated fractals. These networks contain interacting subpaths of different lengths, but do not include any pass-through or residual connections; every internal signal is transformed by a filter and nonlinearity before being seen by subsequent layers. In experiments, fractal networks match the excellent performance of standard residual networks on both CIFAR and ImageNet classification tasks, thereby demonstrating that residual representations may not be fundamental to the success of extremely deep convolutional neural networks. Rather, the key may be the ability to transition, during training, from effectively shallow to deep. We note similarities with student-teacher behavior and develop drop-path, a natural extension of dropout, to regularize co-adaptation of subpaths in fractal architectures. Such regularization allows extraction of high- performance fixed-depth subnetworks. Additionally, fractal networks exhibit an anytime property: shallow subnetworks provide a quick answer, while deeper subnetworks, with higher latency, provide a more accurate answer.
 
 > **요약** :
-자기 유사성을 기반으로 한 neural network 매크로 아키텍처 설계를 소개한다.
-
+자기 유사성을 기반으로 한 neural network 매크로 아키텍처 설계를 소개한다. 단순 확장을 반복 적용시 그 구조는 프렉탈을 띄게 된다. 이러한 네트워크는 pass-through 나 residual connection 은 포함하지 않는다.(여기서 residual connection 은 resnet 구조를 의미)
+이러한 아키텍처는 얕은 하위 네트워크는 빠른 답변을 제공, 깊은 네트워크는 더 정확한 답을 제시한다.
 
 #### tagging
+
+`NN`, `residual connection`, `pass-through`, `CIFAR`, `ImageNet`, `ICLR`
 
 #### paper link
 
@@ -204,7 +206,7 @@ https://arxiv.org/abs/1605.07648
 
 ---
 
-### 14.
+### 15.
 
 #### Abstract
 
@@ -214,7 +216,7 @@ https://arxiv.org/abs/1605.07648
 
 ---
 
-### 14.
+### 16.
 
 #### Abstract
 
@@ -224,7 +226,7 @@ https://arxiv.org/abs/1605.07648
 
 ---
 
-### 14.
+### 17.
 
 #### Abstract
 
@@ -234,7 +236,7 @@ https://arxiv.org/abs/1605.07648
 
 ---
 
-### 14.
+### 18.
 
 #### Abstract
 
@@ -244,7 +246,7 @@ https://arxiv.org/abs/1605.07648
 
 ---
 
-### 14.
+### 19.
 
 #### Abstract
 
@@ -254,7 +256,7 @@ https://arxiv.org/abs/1605.07648
 
 ---
 
-### 14.
+### 20.
 
 #### Abstract
 
