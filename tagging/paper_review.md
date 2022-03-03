@@ -126,33 +126,61 @@ https://arxiv.org/abs/1605.07648
 
 ---
 
-### 7.
+### 7. SGDR: STOCHASTIC GRADIENT DESCENT WITH WARM RESTARTS
 
 #### Abstract
 
+Restart techniques are common in gradient-free optimization to deal with multi- modal functions. Partial warm restarts are also gaining popularity in gradient- based optimization to improve the rate of convergence in accelerated gradient schemes to deal with ill-conditioned functions. In this paper, we propose a sim- ple warm restart technique for stochastic gradient descent to improve its anytime performance when training deep neural networks. We empirically study its per- formance on the CIFAR-10 and CIFAR-100 datasets, where we demonstrate new state-of-the-art results at 3.14% and 16.21%, respectively. We also demonstrate its advantages on a dataset of EEG recordings and on a downsampled version of the ImageNet dataset. Our source code is available at https://github.com/loshchil/SGDR
+
+> **요약** :
+partial warm restarts 에 관한 논문이다.
+확률적 경사하강법을 위한 warm restarts 를 제안하는 데 CIFAR10, CIFAR100 데이터셋에서 각각 3.14%, 16.21% 를 개선했다.
+
 #### tagging
 
+`warm-restarts`, `gradient-descent`, `CIFAR10`, `CIFAR100`, `ImageNet`
+
 #### paper link
+
+https://arxiv.org/abs/1608.03983
 
 ---
 
-### 8.
+### 8. HYPERNETWORKS
 
 #### Abstract
 
+This work explores hypernetworks: an approach of using a one network, also known as a hypernetwork, to generate the weights for another network. Hypernet- works provide an abstraction that is similar to what is found in nature: the relation- ship between a genotype – the hypernetwork – and a phenotype – the main net- work. Though they are also reminiscent of HyperNEAT in evolution, our hyper- networks are trained end-to-end with backpropagation and thus are usually faster. The focus of this work is to make hypernetworks useful for deep convolutional networks and long recurrent networks, where hypernetworks can be viewed as re- laxed form of weight-sharing across layers. Our main result is that hypernetworks can generate non-shared weights for LSTM and achieve near state-of-the-art re- sults on a variety of sequence modelling tasks including character-level language modelling, handwriting generation and neural machine translation, challenging the weight-sharing paradigm for recurrent networks. Our results also show that hypernetworks applied to convolutional networks still achieve respectable results for image recognition tasks compared to state-of-the-art baseline models while requiring fewer learnable parameters.
+
+> **요약** :
+Hypernetworks 는 하나의 네트워크를 사용하여 다른 네트워크의 가중치를 생성하는 기법이다,
+하이퍼 네트워크는 자연에서 발견되는 것과 유사한 abstraction 을 제공한다.
+DNN 과 long-current-network 를 유용하게 만들며 계층간 가중치 공유의 느슨한 형태 제공.
+
 #### tagging
 
+`nlp(?)`, `end to end`, `DNN`, `LSTM`, `back propagation`
+
 #### paper link
+
+https://arxiv.org/abs/1609.09106
 
 ---
 
-### 9.
+### 9. Beyond Skip Connections: Top-Down Modulation for Object Detection
 
 #### Abstract
+
+In recent years, we have seen tremendous progress in the field of object detection. Most of the recent improvements have been achieved by targeting deeper feedforward net- works. However, many hard object categories such as bot- tle, remote, etc. require representation of fine details and not just coarse, semantic representations. But most of these fine details are lost in the early convolutional layers. What we need is a way to incorporate finer details from lower lay- ers into the detection architecture. Skip connections have been proposed to combine high-level and low-level features, but we argue that selecting the right features from low-level requires top-down contextual information. Inspired by the human visual pathway, in this paper we propose top-down modulations as a way to incorporate fine details into the de- tection framework. Our approach supplements the standard bottom-up, feedforward ConvNet with a top-down modula- tion (TDM) network, connected using lateral connections. These connections are responsible for the modulation of lower layer filters, and the top-down network handles the selection and integration of contextual information and low- level features. The proposed TDM architecture provides a significant boost on the COCO benchmark, achieving 28.6 AP for VGG16 and 35.2 AP for ResNet101 networks. Us- ing InceptionResNetv2, our TDM model achieves 37.3 AP, which is the best single-model performance to-date on the COCO testdev benchmark, without any bells and whistles.
+
+> **요약** :
+
 
 #### tagging
 
 #### paper link
+
+https://arxiv.org/abs/1612.06851
 
 ---
 
