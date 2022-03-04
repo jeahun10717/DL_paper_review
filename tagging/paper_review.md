@@ -174,9 +174,11 @@ https://arxiv.org/abs/1609.09106
 In recent years, we have seen tremendous progress in the field of object detection. Most of the recent improvements have been achieved by targeting deeper feedforward net- works. However, many hard object categories such as bot- tle, remote, etc. require representation of fine details and not just coarse, semantic representations. But most of these fine details are lost in the early convolutional layers. What we need is a way to incorporate finer details from lower lay- ers into the detection architecture. Skip connections have been proposed to combine high-level and low-level features, but we argue that selecting the right features from low-level requires top-down contextual information. Inspired by the human visual pathway, in this paper we propose top-down modulations as a way to incorporate fine details into the de- tection framework. Our approach supplements the standard bottom-up, feedforward ConvNet with a top-down modula- tion (TDM) network, connected using lateral connections. These connections are responsible for the modulation of lower layer filters, and the top-down network handles the selection and integration of contextual information and low- level features. The proposed TDM architecture provides a significant boost on the COCO benchmark, achieving 28.6 AP for VGG16 and 35.2 AP for ResNet101 networks. Us- ing InceptionResNetv2, our TDM model achieves 37.3 AP, which is the best single-model performance to-date on the COCO testdev benchmark, without any bells and whistles.
 
 > **요약** :
-
+skip connection 은 초기 Convolution Layer 에서 소실되는 미세한 정보들을 상위 레이어와 하위 레이어를 통합하는 방식으로 개선했다. 이 논문에서는 이 통합과정에서 하위 레이어의 올바른 선택을 하는 방법을 제시한다.
 
 #### tagging
+
+`CNN`, `Skip Connection`, `TDM`, `COCO benchmark`, `VGG16`, `ResNet101`
 
 #### paper link
 
@@ -184,13 +186,22 @@ https://arxiv.org/abs/1612.06851
 
 ---
 
-### 10.
+### 10. Label Refinement Network for Coarse-to-Fine Semantic Segmentation
 
 #### Abstract
 
+We consider the problem of semantic image segmentation using deep convolutional neural networks. We propose a novel network architecture called the label refinement net- work that predicts segmentation labels in a coarse-to-fine fashion at several resolutions. The segmentation labels at a coarse resolution are used together with convolutional fea- tures to obtain finer resolution segmentation labels. We de- fine loss functions at several stages in the network to provide supervisions at different stages. Our experimental results on several standard datasets demonstrate that the proposed model provides an effective way of producing pixel-wise dense image labeling.
+
+> **요약** :
+CNN 모델에서 Label Refinement Network 를 제시한다. 이는 네트워크의 여러 단계에서 loss function 을 정의하여 각각의 단계에서 다른 supervision 을 제시한다.
+
 #### tagging
 
+`CNN`, `Label Refinement Network`, `loss function`, `Segmentation Label`
+
 #### paper link
+
+https://arxiv.org/abs/1703.00551
 
 ---
 
