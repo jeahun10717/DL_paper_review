@@ -205,13 +205,21 @@ https://arxiv.org/abs/1703.00551
 
 ---
 
-### 11.
+### 11. Semantic Instance Segmentation via Deep Metric Learning
 
 #### Abstract
 
+We propose a new method for semantic instance segmen- tation, by first computing how likely two pixels are to be- long to the same object, and then by grouping similar pixels together. Our similarity metric is based on a deep, fully convolutional embedding model. Our grouping method is based on selecting all points that are sufficiently similar to a set of “seed points’, chosen from a deep, fully convolu- tional scoring model. We show competitive results on the Pascal VOC instance segmentation benchmark.
+
+> **요약** : 두 픽셀이 하나의 객체에 속할 가능성을 계산 하여 유사한 픽셀들을 그룹화 하는 방식을 제시한다. 이것은 similarity metric는 deep fully convolution embeded 모델을 기반으로 하며 pascal VOC 벤치마크에서 유의미한 결과를 보여준다.
+
 #### tagging
 
+`similarity metric`, `CNN`, `pascal VOC benchmark`, `deep fully convolution embed model`
+
 #### paper link
+
+https://arxiv.org/abs/1703.10277
 
 ---
 
