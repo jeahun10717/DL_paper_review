@@ -8,7 +8,7 @@
 
 We present a new method that views object detection as a direct set prediction problem. Our approach streamlines the detection pipeline, effectively removing the need for many hand-designed compo- nents like a non-maximum suppression procedure or anchor generation that explicitly encode our prior knowledge about the task. The main ingredients of the new framework, called DEtection TRansformer or DETR, are a set-based global loss that forces unique predictions via bi- partite matching, and a transformer encoder-decoder architecture. Given a fixed small set of learned object queries, DETR reasons about the re- lations of the objects and the global image context to directly output the final set of predictions in parallel. The new model is conceptually simple and does not require a specialized library, unlike many other modern detectors. DETR demonstrates accuracy and run-time perfor- mance on par with the well-established and highly-optimized Faster R- CNN baseline on the challenging COCO object detection dataset. More- over, DETR can be easily generalized to produce panoptic segmentation in a unified manner. We show that it significantly outperforms com- petitive baselines. Training code and pretrained models are available at https://github.com/facebookresearch/detr.
 
-> **요약** :
+> **요약 :**
 DETR 방법에 관한 논문으로써 기존의 Object Detection 과 달리 특별한 라이브러리가 필요 없고 간단한 아키텍처를 제시함
 
 #### tagging
@@ -28,7 +28,7 @@ https://link.springer.com/chapter/10.1007/978-3-030-58452-8_13
 
 We introduce UCF101 which is currently the largest dataset of human actions. It consists of 101 action classes, over 13k clips and 27 hours of video data. The database consists of realistic user-uploaded videos containing cam- era motion and cluttered background. Additionally, we pro- vide baseline action recognition results on this new dataset using standard bag of words approach with overall perfor- mance of 44.5%. To the best of our knowledge, UCF101 is currently the most challenging dataset of actions due to its large number of classes, large number of clips and also unconstrained nature of such clips.
 
-> **요약** :
+> **요약 :**
 실제 카메라로 찍은 영상들 즉 흔들림이나 배경의 이동 등등 사용자가 업로드한 비디오들로 이루어진 DataSet 으로 현재까지 가장 까다로운 dataset 으로 평가된다.
 
 #### tagging
@@ -47,7 +47,7 @@ https://arxiv.org/abs/1212.0402
 
 In this work we investigate the effect of the convolutional network depth on its accuracy in the large-scale image recognition setting. Our main contribution is a thorough evaluation of networks of increasing depth using an architecture with very small (3 × 3) convolution filters, which shows that a significant improvement on the prior-art configurations can be achieved by pushing the depth to 16–19 weight layers. These findings were the basis of our ImageNet Challenge 2014 submission, where our team secured the first and the second places in the localisa- tion and classification tracks respectively. We also show that our representations generalise well to other datasets, where they achieve state-of-the-art results. We have made our two best-performing ConvNet models publicly available to facili- tate further research on the use of deep visual representations in computer vision.
 
-> **요약** :
+> **요약 :**
 Convolution Network 에서 그 깊이가 정확도에 미치는 영향에 대해 설명한다.
 depth를 16 - 19 정도로 깊이를 두었다.
 
@@ -67,7 +67,7 @@ https://arxiv.org/abs/1409.1556
 
 How can a single fully convolutional neural network (FCN) perform on object detection? We introduce DenseBox, a unified end-to-end FCN framework that directly predicts bounding boxes and object class confidences through all locations and scales of an image. Our contribution is two-fold. First, we show that a single FCN, if designed and optimized carefully, can detect multiple different objects extremely accurately and efficiently. Second, we show that when incorporating with landmark localization during multi-task learning, DenseBox further improves object detection accuray. We present experimental results on public benchmark datasets including MALF face detection and KITTI car detection, that indicate our DenseBox is the state-of-the-art system for detecting challenging objects such as faces and cars.
 
-> **요약** :
+> **요약 :**
 Single Fully CNN 에서 좋은 설계와 최적화를 통해 효율적으로 감지함
 multi-task learning 에서 landmark 의 위치파악가 통합할 때 정확도를 더욱 향상시킴
 까다로운 물체를 감별할 때 더욱 좋은 효과를 보임
@@ -89,7 +89,7 @@ https://arxiv.org/abs/1509.04874
 Recent research on deep convolutional neural networks (CNNs) has focused pri- marily on improving accuracy. For a given accuracy level, it is typically possi- ble to identify multiple CNN architectures that achieve that accuracy level. With equivalent accuracy, smaller CNN architectures offer at least three advantages: (1) Smaller CNNs require less communication across servers during distributed train- ing. (2) Smaller CNNs require less bandwidth to export a new model from the cloud to an autonomous car. (3) Smaller CNNs are more feasible to deploy on FP- GAs and other hardware with limited memory. To provide all of these advantages, we propose a small CNN architecture called SqueezeNet. SqueezeNet achieves AlexNet-level accuracy on ImageNet with 50x fewer parameters. Additionally, with model compression techniques, we are able to compress SqueezeNet to less than 0.5MB (510× smaller than AlexNet).
 The SqueezeNet architecture is available for download here: https://github.com/DeepScale/SqueezeNet
 
-> **요약** :
+> **요약 :**
 CNN 에서 작은 모델은 3가지 이점을 제공한다
 첫째 : 분산 학습중 서버간 통신이 적음
 둘째 : 자율 자동차로 모델을 내보내는데 대역폭이 덜 필요하다.
@@ -112,7 +112,7 @@ https://arxiv.org/pdf/1602.07360.pdf
 
 We introduce a design strategy for neural network macro-architecture based on self- similarity. Repeated application of a simple expansion rule generates deep networks whose structural layouts are precisely truncated fractals. These networks contain interacting subpaths of different lengths, but do not include any pass-through or residual connections; every internal signal is transformed by a filter and nonlinearity before being seen by subsequent layers. In experiments, fractal networks match the excellent performance of standard residual networks on both CIFAR and ImageNet classification tasks, thereby demonstrating that residual representations may not be fundamental to the success of extremely deep convolutional neural networks. Rather, the key may be the ability to transition, during training, from effectively shallow to deep. We note similarities with student-teacher behavior and develop drop-path, a natural extension of dropout, to regularize co-adaptation of subpaths in fractal architectures. Such regularization allows extraction of high- performance fixed-depth subnetworks. Additionally, fractal networks exhibit an anytime property: shallow subnetworks provide a quick answer, while deeper subnetworks, with higher latency, provide a more accurate answer.
 
-> **요약** :
+> **요약 :**
 자기 유사성을 기반으로 한 neural network 매크로 아키텍처 설계를 소개한다. 단순 확장을 반복 적용시 그 구조는 프렉탈을 띄게 된다. 이러한 네트워크는 pass-through 나 residual connection 은 포함하지 않는다.(여기서 residual connection 은 resnet 구조를 의미)
 이러한 아키텍처는 얕은 하위 네트워크는 빠른 답변을 제공, 깊은 네트워크는 더 정확한 답을 제시한다.
 
@@ -132,7 +132,7 @@ https://arxiv.org/abs/1605.07648
 
 Restart techniques are common in gradient-free optimization to deal with multi- modal functions. Partial warm restarts are also gaining popularity in gradient- based optimization to improve the rate of convergence in accelerated gradient schemes to deal with ill-conditioned functions. In this paper, we propose a sim- ple warm restart technique for stochastic gradient descent to improve its anytime performance when training deep neural networks. We empirically study its per- formance on the CIFAR-10 and CIFAR-100 datasets, where we demonstrate new state-of-the-art results at 3.14% and 16.21%, respectively. We also demonstrate its advantages on a dataset of EEG recordings and on a downsampled version of the ImageNet dataset. Our source code is available at https://github.com/loshchil/SGDR
 
-> **요약** :
+> **요약 :**
 partial warm restarts 에 관한 논문이다.
 확률적 경사하강법을 위한 warm restarts 를 제안하는 데 CIFAR10, CIFAR100 데이터셋에서 각각 3.14%, 16.21% 를 개선했다.
 
@@ -152,7 +152,7 @@ https://arxiv.org/abs/1608.03983
 
 This work explores hypernetworks: an approach of using a one network, also known as a hypernetwork, to generate the weights for another network. Hypernet- works provide an abstraction that is similar to what is found in nature: the relation- ship between a genotype – the hypernetwork – and a phenotype – the main net- work. Though they are also reminiscent of HyperNEAT in evolution, our hyper- networks are trained end-to-end with backpropagation and thus are usually faster. The focus of this work is to make hypernetworks useful for deep convolutional networks and long recurrent networks, where hypernetworks can be viewed as re- laxed form of weight-sharing across layers. Our main result is that hypernetworks can generate non-shared weights for LSTM and achieve near state-of-the-art re- sults on a variety of sequence modelling tasks including character-level language modelling, handwriting generation and neural machine translation, challenging the weight-sharing paradigm for recurrent networks. Our results also show that hypernetworks applied to convolutional networks still achieve respectable results for image recognition tasks compared to state-of-the-art baseline models while requiring fewer learnable parameters.
 
-> **요약** :
+> **요약 :**
 Hypernetworks 는 하나의 네트워크를 사용하여 다른 네트워크의 가중치를 생성하는 기법이다,
 하이퍼 네트워크는 자연에서 발견되는 것과 유사한 abstraction 을 제공한다.
 DNN 과 long-current-network 를 유용하게 만들며 계층간 가중치 공유의 느슨한 형태 제공.
@@ -173,7 +173,7 @@ https://arxiv.org/abs/1609.09106
 
 In recent years, we have seen tremendous progress in the field of object detection. Most of the recent improvements have been achieved by targeting deeper feedforward net- works. However, many hard object categories such as bot- tle, remote, etc. require representation of fine details and not just coarse, semantic representations. But most of these fine details are lost in the early convolutional layers. What we need is a way to incorporate finer details from lower lay- ers into the detection architecture. Skip connections have been proposed to combine high-level and low-level features, but we argue that selecting the right features from low-level requires top-down contextual information. Inspired by the human visual pathway, in this paper we propose top-down modulations as a way to incorporate fine details into the de- tection framework. Our approach supplements the standard bottom-up, feedforward ConvNet with a top-down modula- tion (TDM) network, connected using lateral connections. These connections are responsible for the modulation of lower layer filters, and the top-down network handles the selection and integration of contextual information and low- level features. The proposed TDM architecture provides a significant boost on the COCO benchmark, achieving 28.6 AP for VGG16 and 35.2 AP for ResNet101 networks. Us- ing InceptionResNetv2, our TDM model achieves 37.3 AP, which is the best single-model performance to-date on the COCO testdev benchmark, without any bells and whistles.
 
-> **요약** :
+> **요약 :**
 skip connection 은 초기 Convolution Layer 에서 소실되는 미세한 정보들을 상위 레이어와 하위 레이어를 통합하는 방식으로 개선했다. 이 논문에서는 이 통합과정에서 하위 레이어의 올바른 선택을 하는 방법을 제시한다.
 
 #### tagging
@@ -192,7 +192,7 @@ https://arxiv.org/abs/1612.06851
 
 We consider the problem of semantic image segmentation using deep convolutional neural networks. We propose a novel network architecture called the label refinement net- work that predicts segmentation labels in a coarse-to-fine fashion at several resolutions. The segmentation labels at a coarse resolution are used together with convolutional fea- tures to obtain finer resolution segmentation labels. We de- fine loss functions at several stages in the network to provide supervisions at different stages. Our experimental results on several standard datasets demonstrate that the proposed model provides an effective way of producing pixel-wise dense image labeling.
 
-> **요약** :
+> **요약 :**
 CNN 모델에서 Label Refinement Network 를 제시한다. 이는 네트워크의 여러 단계에서 loss function 을 정의하여 각각의 단계에서 다른 supervision 을 제시한다.
 
 #### tagging
@@ -211,7 +211,8 @@ https://arxiv.org/abs/1703.00551
 
 We propose a new method for semantic instance segmen- tation, by first computing how likely two pixels are to be- long to the same object, and then by grouping similar pixels together. Our similarity metric is based on a deep, fully convolutional embedding model. Our grouping method is based on selecting all points that are sufficiently similar to a set of “seed points’, chosen from a deep, fully convolu- tional scoring model. We show competitive results on the Pascal VOC instance segmentation benchmark.
 
-> **요약** : 두 픽셀이 하나의 객체에 속할 가능성을 계산 하여 유사한 픽셀들을 그룹화 하는 방식을 제시한다. 이것은 similarity metric는 deep fully convolution embeded 모델을 기반으로 하며 pascal VOC 벤치마크에서 유의미한 결과를 보여준다.
+> **요약 :**
+ 두 픽셀이 하나의 객체에 속할 가능성을 계산 하여 유사한 픽셀들을 그룹화 하는 방식을 제시한다. 이것은 similarity metric는 deep fully convolution embeded 모델을 기반으로 하며 pascal VOC 벤치마크에서 유의미한 결과를 보여준다.
 
 #### tagging
 
@@ -223,13 +224,23 @@ https://arxiv.org/abs/1703.10277
 
 ---
 
-### 12.
+### 12. MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications
 
 #### Abstract
 
+We present a class of efficient models called MobileNets for mobile and embedded vision applications. MobileNets are based on a streamlined architecture that uses depth- wise separable convolutions to build light weight deep neural networks. We introduce two simple global hyper-parameters that efficiently trade off between latency and accuracy. These hyper-parameters allow the model builder to choose the right sized model for their application based on the constraints of the problem. We present extensive experiments on resource and accuracy tradeoffs and show strong performance compared to other popular models on ImageNet classification. We then demonstrate the effectiveness of MobileNets across a wide range of applications and use cases including object detection, finegrain classification, face attributes and large scale geo-localization.
+
+
+> **요약 :**
+모바일 및 임베디드 비전 어플리케이션을 위한 MobileNet 이라는 모델을 제시한다. MobileNet 은 분리가능한 Convolution 을 사용하여 Deep Neural Network 의 간소화 아키텍처를 기반으로 한다. 지연시간과 정확성을 효율적으로 절충하는 2가지 매개변수를 소개한다.
+
 #### tagging
 
+`MobileNet`, `DNN`, `ImageNet`, `hyper parameters` `object detection`, `finegrain classification`, `face attributes`, `large scale geolocalization`
+
 #### paper link
+
+https://arxiv.org/abs/1704.04861
 
 ---
 
