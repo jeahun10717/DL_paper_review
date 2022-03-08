@@ -244,23 +244,41 @@ https://arxiv.org/abs/1704.04861
 
 ---
 
-### 13.
+### 13. VSE++: Improving Visual-Semantic Embeddings with Hard Negatives
 
 #### Abstract
 
+We present a new technique for learning visual-semantic embeddings for cross-modal retrieval. Inspired by hard negative mining, the use of hard negatives in structured pre- diction, and ranking loss functions, we introduce a simple change to common loss func- tions used for multi-modal embeddings. That, combined with fine-tuning and use of augmented data, yields significant gains in retrieval performance. We showcase our approach, VSE++, on MS-COCO and Flickr30K datasets, using ablation studies and comparisons with existing methods. On MS-COCO our approach outperforms state-of- the-art methods by 8.8% in caption retrieval and 11.3% in image retrieval (at R@1).
+
+> **요약 :**
+교차모드 검색을 위한 기술로 hard negative mining 에 영감을 받아 loss-function 에 약간의 변경을 소개한다.
+
 #### tagging
 
+`loss function`, `MS-COCO DataSet`, `Flickr30K DataSet`,
+
 #### paper link
+
+https://arxiv.org/abs/1707.05612
 
 ---
 
-### 14.
+### 14. Semantic Instance Segmentation with a Discriminative Loss Function
 
 #### Abstract
 
+Semantic instance segmentation remains a challenging task. In this work we propose to tackle the problem with a discriminative loss function, operating at the pixel level, that encourages a convolutional network to produce a representation of the image that can easily be clustered into instances with a simple post-processing step. The loss function encourages the network to map each pixel to a point in feature space so that pixels belonging to the same in- stance lie close together while different instances are separated by a wide margin. Our approach of combining an off-the-shelf network with a principled loss function inspired by a metric learning objective is conceptually simple and distinct from recent efforts in instance segmentation. In contrast to previous works, our method does not rely on object proposals or recurrent mechanisms. A key contribution of our work is to demonstrate that such a simple setup without bells and whistles is effective and can perform on-par with more complex methods. Moreover, we show that it does not suffer from some of the limitations of the popular detect-and-segment approaches. We achieve competitive performance on the Cityscapes and CVPPP leaf segmentation benchmarks.
+
+> **요약 :**
+instance segmentation 
+
 #### tagging
 
+
+
 #### paper link
+
+https://arxiv.org/abs/1708.02551
 
 ---
 
