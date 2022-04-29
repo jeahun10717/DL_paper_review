@@ -1,6 +1,7 @@
 # Paper Review - CV
 1. 여기서는 CV 관련한 논물들의 요약과 tagging 을 진행한다.
-2. nlp 와 관련된 논문들은 추후 따로 진행할 것이다.
+2. CV 가 아니더라도 논문에 필요한 것들(activate function, dataset, dataset 가공기법, optimizer 등)은 이 리뷰에 포함 시킨다.
+3. nlp 와 관련된 논문들은 추후 따로 진행할 것이다.
 
 
 ---
@@ -382,7 +383,45 @@ https://arxiv.org/abs/1710.09412
 
 ---
 
-### 19.
+### 19. DECOUPLED WEIGHT DECAY REGULARIZATION
+
+#### Abstract
+
+L2 regularization and weight decay regularization are equivalent for standard stochastic gradient descent (when rescaled by the learning rate), but as we demonstrate this is not the case for adaptive gradient algorithms, such as Adam. While common implementations of these algorithms employ L2 regularization (often calling it “weight decay” in what may be misleading due to the inequivalence we expose), we propose a simple modification to recover the original formulation of weight decay regularization by decoupling the weight decay from the optimization steps taken w.r.t. the loss function. We provide empirical evidence that our pro- posed modification (i) decouples the optimal choice of weight decay factor from the setting of the learning rate for both standard SGD and Adam and (ii) substantially improves Adam’s generalization performance, allowing it to compete with SGD with momentum on image classification datasets (on which it was previously typically outperformed by the latter). Our proposed decoupled weight decay has already been adopted by many researchers, and the community has implemented it in TensorFlow and PyTorch; the complete source code for our experiments is available at https://github.com/loshchil/AdamW-and-SGDW
+
+> **요약 :**
+여러 연구에서 optimizer 를 선택할 때 Adam 과 SDG 사이에서 고민하는 경우가 많다. 이 때 일반적인 Data set 에서 SDG 가 높은 성능을 발휘하는 경우라 하더라도 Adam 의 일반화 성능을 증대시켜 경쟁력을 높이는 방법을 제시한다.
+
+#### tagging
+
+`Adam`, `SDG`, `Optimizer`
+
+#### paper link
+
+https://arxiv.org/abs/1711.05101
+---
+
+### 20. DEEP LEARNING SCALING IS PREDICTABLE, EMPIRICALLY
+
+#### Abstract
+
+Deep learning (DL) creates impactful advances following a virtuous recipe: model architecture search, creating large training data sets, and scaling computation. It is widely believed that growing training sets and models should improve accuracy and result in better products. As DL application domains grow, we would like a deeper understanding of the relationships between training set size, computational scale, and model accuracy improvements to advance the state-of-the-art.
+This paper presents a large scale empirical characterization of generalization error and model size growth as training sets grow. We introduce a methodology for this measurement and test four machine learning domains: machine translation, language modeling, image processing, and speech recognition. Our empirical results show power-law generalization error scaling across a breadth of factors, resulting in power-law exponents—the "steepness" of the learning curve—yet to be explained by theoretical work. Further, model improvements only shift the error but do not appear to affect the power-law exponent. We also show that model size scales sublinearly with data size. These scaling relationships have significant implications on deep learning research, practice, and systems. They can assist model debugging, setting accuracy targets, and decisions about data set growth. They can also guide computing system design and underscore the importance of continued computational scaling.
+
+> **요약 :**
+딥러닝 모델에서 training set 과 training model 을 성장시키면 더 나은 제품이 나올것이라는 것이 정설이다. 이 논문에서는 그 가설에 대한 좀 더 엄밀한 실험을 제시한다.
+
+#### tagging
+
+`Deep Learning`, `training set`, `model`
+
+#### paper link
+
+https://arxiv.org/abs/1712.00409
+
+---
+
+### 21.
 
 #### Abstract
 
@@ -390,11 +429,119 @@ https://arxiv.org/abs/1710.09412
 
 #### paper link
 
-https://arxiv.org/abs/1711.02281
+---
+
+### 22.
+
+#### Abstract
+
+#### tagging
+
+#### paper link
 
 ---
 
-### 20.
+### 23.
+
+#### Abstract
+
+#### tagging
+
+#### paper link
+
+---
+
+### 24.
+
+#### Abstract
+
+#### tagging
+
+#### paper link
+
+---
+
+### 25.
+
+#### Abstract
+
+#### tagging
+
+#### paper link
+
+---
+
+### 26.
+
+#### Abstract
+
+#### tagging
+
+#### paper link
+
+---
+
+### 27.
+
+#### Abstract
+
+#### tagging
+
+#### paper link
+
+---
+
+### 28.
+
+#### Abstract
+
+#### tagging
+
+#### paper link
+
+---
+
+### 29.
+
+#### Abstract
+
+#### tagging
+
+#### paper link
+
+---
+
+### 30.
+
+#### Abstract
+
+#### tagging
+
+#### paper link
+
+---
+
+### 31.
+
+#### Abstract
+
+#### tagging
+
+#### paper link
+
+---
+
+### 32.
+
+#### Abstract
+
+#### tagging
+
+#### paper link
+
+---
+
+### 33.
 
 #### Abstract
 
