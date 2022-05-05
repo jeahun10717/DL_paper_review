@@ -466,10 +466,11 @@ https://arxiv.org/abs/1804.02767
 Many real-world problems, e.g. object detection, have outputs that are naturally expressed as sets of entities. This creates a challenge for traditional deep neural networks which naturally deal with structured outputs such as vectors, matrices or tensors. We present a novel approach for learning to predict sets with unknown permutation and cardinality using deep neural networks. Specifically, in our formulation we incorporate the permutation as unobservable variable and estimate its distribution during the learning process using alternating optimization. We demonstrate the validity of this new formulation on two relevant vision problems: object detection, for which our formulation outperforms state-of-the-art detectors such as Faster R-CNN and YOLO, and a complex CAPTCHA test, where we observe that, surprisingly, our set based network acquired the ability of mimicking arithmetics without any rules being coded.
 
 > **요약 :**
+실제 세계에서 object detection 에서 자연스럽게 개체 집합으로 표현되는 출력들이 존재한다. 이는 vector, matrix, tensor 와 같은 데이터가 처리를 할 때 문제를 발생시키는데 이를 방지하는 기법을 소개한다. 학습도중 permutation 과 cardinality 를 분석하여 최적화를 진행한다.
 
 #### tagging
 
-
+`DNN`, `object detection`, `YOLO`, `complex CAPCHA test`
 
 #### paper link
 
