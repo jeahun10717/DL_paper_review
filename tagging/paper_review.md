@@ -487,14 +487,15 @@ We formulate this intuition as a non-parametric classification problem at the in
 Our experimental results demonstrate that, under unsu- pervised learning settings, our method surpasses the state- of-the-art on ImageNet classification by a large margin. Our method is also remarkable for consistently improv- ing test performance with more training data and better network architectures. By fine-tuning the learned feature, we further obtain competitive results for semi-supervised learning and object detection tasks. Our non-parametric model is highly compact: With 128 features per image, our method requires only 600MB storage for a million images, enabling fast nearest neighbour retrieval at the run time.
 
 > **요약 :**
+non-parametric classification 에 관한 문제에서 noise- contrastive estimation를 이용한다.
 
 #### tagging
 
-
+`noise-contrastive estimate`, `Unsupervised Learning`, `ImageNet`
 
 #### paper link
 
-
+https://openaccess.thecvf.com/content_cvpr_2018/html/Wu_Unsupervised_Feature_Learning_CVPR_2018_paper.html
 
 ---
 

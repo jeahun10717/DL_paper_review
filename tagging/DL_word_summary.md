@@ -31,3 +31,5 @@ Instance segmentation을 통해 해결할 수 있다.
 ![example of clustering](../img/img3.png)
 
 [참고 사이트](http://www.aistudy.com/pattern/clustering.htm)
+
+### 4. non-parametric classification
