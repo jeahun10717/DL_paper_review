@@ -484,7 +484,7 @@ https://arxiv.org/abs/1805.00613
 
 Neural net classifiers trained on data with annotated class labels can also capture apparent visual similarity among categories without being directed to do so. We study whether this observation can be extended beyond the conventional domain of supervised learning: Can we learn a good feature representation that captures apparent similarity among instances, instead of classes, by merely asking the feature to be discriminative of individual instances?
 We formulate this intuition as a non-parametric classification problem at the instance-level, and use noise- contrastive estimation to tackle the computational challenges imposed by the large number of instance classes.
-Our experimental results demonstrate that, under unsu- pervised learning settings, our method surpasses the state- of-the-art on ImageNet classification by a large margin. Our method is also remarkable for consistently improv- ing test performance with more training data and better network architectures. By fine-tuning the learned feature, we further obtain competitive results for semi-supervised learning and object detection tasks. Our non-parametric model is highly compact: With 128 features per image, our method requires only 600MB storage for a million images, enabling fast nearest neighbour retrieval at the run time.
+Our experimental results demonstrate that, under unsupervised learning settings, our method surpasses the state- of-the-art on ImageNet classification by a large margin. Our method is also remarkable for consistently improv- ing test performance with more training data and better network architectures. By fine-tuning the learned feature, we further obtain competitive results for semi-supervised learning and object detection tasks. Our non-parametric model is highly compact: With 128 features per image, our method requires only 600MB storage for a million images, enabling fast nearest neighbour retrieval at the run time.
 
 > **요약 :**
 non-parametric classification 에 관한 문제에서 noise- contrastive estimation를 이용한다.
@@ -499,9 +499,14 @@ https://openaccess.thecvf.com/content_cvpr_2018/html/Wu_Unsupervised_Feature_Lea
 
 ---
 
-### 25.
+### 25. Representation Learning with Contrastive Predictive Coding
 
 #### Abstract
+
+While supervised learning has enabled great progress in many applications, unsu- pervised learning has not seen such widespread adoption, and remains an important and challenging endeavor for artificial intelligence. In this work, we propose a universal unsupervised learning approach to extract useful representations from high-dimensional data, which we call Contrastive Predictive Coding. The key in- sight of our model is to learn such representations by predicting the future in latent space by using powerful autoregressive models. We use a probabilistic contrastive loss which induces the latent space to capture information that is maximally useful to predict future samples. It also makes the model tractable by using negative sampling. While most prior work has focused on evaluating representations for a particular modality, we demonstrate that our approach is able to learn useful representations achieving strong performance on four distinct domains: speech, images, text and reinforcement learning in 3D environments.
+
+> **요약 :**
+
 
 #### tagging
 
